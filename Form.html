@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.9/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.9/dist/js/uikit-icons.min.js"></script>
+    <title>Payment Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="LaxmiCheatFund.css">
+</head>
+<body>
+    <header>
+        <div class="frame" >
+        <h1 align ="center" class="heading" > Laxmi Cheat Fund</h1>
+         <p class="subtitle" >
+         25 Din Main Paisa Double <br> ( Paisa Hi Paisa Hoga.. Aish Hi Aish Karege )
+         </p> 
+        </div>
+     <nav class="nav" >
+        <a href="#Menu"  >Menu</a>
+        <a href="#Menu"  >Login/SignUp</a>
+        <a href="#Menu"  >Our benificals</a>
+     </nav> 
+    </header>
+    <!-- <form action="" style=" background-color:  rgb(149, 208, 214);" ></form> -->
+        <!-- <hr> <hr> -->
+      <div class="containt">
+        <h2 align="center" style="text-shadow: 2px 2px 4px rgb(194, 9, 9); font-size: 33px;">Personal Information</h2>
+        <p> Name<sup style="color: red;" >*</sup> :  <input type="text" name="Name" placeholder="Name" required > &nbsp; &nbsp; Father Name<sup style="color: red;" >*</sup> : <input type="text" name="Father_name" required placeholder="Father's Name" > </p>
+        
+        <fieldset class="jaruri" >
+            <legend align="center" > <b>JARURI ITEMS</b> </legend>
+           <legend> Gender (Not Xender) </legend>
+            <p> 
+                Male <input type="radio" name="gender" id="male" > Female <input type="radio" name="gender" id="female">
+            </p>
+            <legend>-------Paise ki limit ------</legend>
+            <p >
+                1 Lakh <input type="radio" name="limit" id="1_lakh">  Below 50lakh <input type="radio" name="limit" id="10_lakh"> 
+                Below 1 Crore <input type="radio" name="limit" id="1_crore">  Bohut Paisa hai <input type="radio" name="limit" id="bohut"> Edhar Jheher Khane Ke paise nhi hai <input type="radio" name="limit" id="paise nhi hai" >
+             </p>
+            <legend>------Documents------( Tick Lga Dena )</legend>
+            <p>
+                Adhaar Card <input type="checkbox" name="Document" id="aadhar"> |
+                Pan Card <input type="checkbox" name="Document" id="pancard"> |
+                Bank Passbook <input type="checkbox" name="Document" id="bank"> | 
+                Ghar Ke Kagaj <input required type="checkbox" name="Document" id="kagaj"> |
+                1 Kedney <input required  type="checkbox" name="Document" id="Kedney"> | 
+                1 Ankh <input type="checkbox" name="Document" id="Ankh"> |  Plastic Surgry Ka Naam Suna Hai <input required type="checkbox" name="suna" id="suna"> |  Tumko Gana Gaana Aata Hai <input required type="checkbox" name="gaana" id="gaana"> |
+            </p>
+        </fieldset>
+        <p>Address : <textarea name="Address" id="Address" cols="70" rows="4" placeholder="Enter Your Address" ></textarea> </p>
+        <p>E-Mail<sup style="color: red;" >*</sup> : <input type="email" name="email" id="email" required placeholder="abcd123@gmail.com" > &nbsp; Mobile No.<sup style="color: red;" >*</sup> <input type="number" name="number" id="mobile_number" required placeholder="123456789" > <br> <br>
+           State<sup style="color: red;" >*</sup> : 
+           <select name="State" id="State"required >
+               <option value="">Select any state</option>
+               <option value="up">U.P.</option>
+               <option value="mp">M.P.</option>
+               <option value="Delhi">Delhi</option>
+               <option value="Punjab">Punjab</option>
+               <option value="Maharastra">Maharastra</option>
+               <option value="Bihar">Bihar</option>
+               <option value="J&k ">Jammu </option>
+               <option value="any"> Mera Nhi Koi Aur Thikana ..</option>
+           </select> &nbsp;
+             City<sup style="color: red;" >*</sup> : <input type="text" name="city" id="City" required placeholder="City" > <br> <br> Pincode : <input type="number" name="pincode" id="pincode" placeholder="1234" >
+            </p> <hr>
+            <h2 align="center" style="text-shadow: 2px 2px 4px rgb(194, 9, 9); font-size: 33px;" >Payment method  ( Paisa Laya.. )</h2>
+            <p>
+            <h5>Maal Laya<sup style="color: red;" >**</sup> : <small>Rs</small> <input type="number" name="paisa" id="paisa" required placeholder="Enter Amount (Maal) " ></h5>
+            Card Type : <select name="card_type" id="card_type">
+                <option value="">Select any Card</option>
+                <option value="debit">Debit Card</option>
+                <option value="Credit">Credit Card</option>
+                <option value="Rahsan">Rashan Card</option>
+                <option value="Shadi">Shadi Card</option>
+                <option value="ID">ID Card</option>
+            </select> &nbsp;
+            Transication Company : <select name="company" id="company">
+                <option value="">Select Card Type </option>
+                <option value="Master">Master Card</option>
+                <option value="Visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+            </select> 
+            <br> <br>
+            Card No. : <input type="number" name="Card_number" id="Card_number" placeholder="0000-0000-0000-0000" ><br> <br>
+            Exp. Date : <input type="date" name="" id=""> 
+            CVV : <input type="password" name="cvv" id="cvv" placeholder="123" > 
+            <div class="button">
+                <p align="center" >|&nbsp; <input type="submit" name="Pay Now" class="submit"> &nbsp;
+                 | &nbsp; <input type="reset" value="Reset" class="reset" >&nbsp; |&nbsp;  <input type="button" value="Hamse Na Ho Payega" class="HamseNaHoPayega">&nbsp; |     
+               </p>
+            </div>
+         </div>
+        </form>
+
+    <footer  >
+        <div>
+            <h2 class="maja" style="text-align: center; font-size: 30px ; font-weight: 200; " >Abhi Maja Ayega Naa Bhidu</h2>
+            <h4 style="text-shadow:2px 3px 4px black ;" >| &nbsp; About Policy &nbsp; |</h4>
+            <p class="scripts" >
+                Our friendly customer support team is your extended family. Speak your heart out. 
+                They listen with undivided attention to resolve your concerns. 
+                Give us a call, request a callback or drop us an email, we’re here to help. 
+            </p>
+            
+        
+           <div class="lastSub" >  
+               <palign="center" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">  Achha Bhai Ab Main Chalta Hu..... <br> (Tata... BY-BY... Khatam... GYA... ) 
+               <div> <br> <a href="Memer's Academy.html" align="right" target="_blank" class="Onlyabk" > &copy ONLY.ABK </a> - <a href="mailto: onlyabk@gmail.com" target="_blank" >Onlyabk@gmail.com &#128231; </a></div>  </p>
+            </div>
+            <hr class="lastline" >
+        </div>
+        <div class="faq" >
+            <a href="#">FAQ</a> &nbsp; |
+        <a href="#">Trems and Conditon</a>&nbsp; |
+        <a href="#">Contact Us &trade; </a>&nbsp; |
+        <a href="#">&copy;2020Memer'sAcademy</a>&nbsp; |
+        <a href="#">&reg;2020</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
